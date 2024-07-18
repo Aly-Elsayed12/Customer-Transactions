@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Transactions</title>
+  <meta name="description" content="Customer Transactions App">
+  <link rel="icon" href="image/linear-customer-transaction-icon-vector-260nw-1850310484.webp" type="image/*">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="mb-4 text-center">Customer Transactions</h1>
+  </header>
+  <main>
+    <section>
+      <div class="container d-flex mb-4 gap-4">
+          <input type="text" class="form-control w-50 me-auto" id="searchByName" placeholder="Search by customer name ">
+          <input type="text" class="form-control w-50 me-auto" id="searchByAmount" placeholder="Search by transaction amount">
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <table id="customerTable">
+            <thead class="bg-info">
+              <tr class="text-white">
+                  <th class="" >Customer Id</th>
+                  <th>Customer Name</th>
+                  <th>Transaction Amount</th>
+                  <th>Transaction Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+      </div>
+    </section>
+
+    <section class="pt-4">
+      <div class="container">
+        <div id="chartContainer">
+          <div>
+            <canvas id="transactionChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/script .js"></script>
+</body>
+</html>
